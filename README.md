@@ -17,7 +17,7 @@ O layout está disponível em formato de Illustrator. No pacote acompanham os li
 A API apenas fornece informações. Qualquer requisição diferente de OPTION, GET ou HEAD será ignorada.
 
 ###Categorias
-Endpoint: http://lab.div64.com/teste/categorias
+Endpoint: http://env-6651411.jelasticlw.com.br/teste_api/public/categorias
 
 Formato de dados:
 ```json
@@ -32,7 +32,7 @@ Formato de dados:
 ]
 ```
 ###Produtos
-Endpoint: http://lab.div64.com/teste/produtos
+Endpoint: http://env-6651411.jelasticlw.com.br/teste_api/public/produtos
 
 Formato de dados:
 ```json
@@ -42,13 +42,13 @@ Formato de dados:
 		"slug": "suqueira-tudo-e-festa",
 		"nome": "Suqueira Tudo é Festa",
 		"preco": 100.00,
-		"thumbnail": "http://lab.div64.com/teste/imagens/thumbnail.jpg",
+		"thumbnail": "http://env-6651411.jelasticlw.com.br/teste_api/public/thumbnail.jpg",
 	},
 	{...}
 ]
 ```
 ###Produto
-Endpoint: http://lab.div64.com/teste/produto/:id
+Endpoint: http://env-6651411.jelasticlw.com.br/teste_api/public/produto/:id
 
 Formato de dados:
 ```json
@@ -57,7 +57,7 @@ Formato de dados:
 	"slug": "suqueira-tudo-e-festa",
 	"nome": "Suqueira Tudo é Festa",
 	"preco": 100.00,
-	"thumbnail": "http://lab.div64.com/teste/imagens/thumbnail.jpg",
+	"thumbnail": "http://env-6651411.jelasticlw.com.br/teste_api/public/thumbnail.jpg",
 }
 ```
 
