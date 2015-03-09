@@ -2,12 +2,64 @@
 
 O objetivo desta avaliação é observarmos sua capacidade de observação, atenção a detalhes, organização e metodologias aplicadas. A tarefa é bastante simples: programar um catálogo de produtos para iPad, considerando as possívels variações de viewport e comportamentos do usuário.
 
+Cada categoria disponível na API deve ser renderizada como um carousel exibindo seus produtos. Você poderá consumir os dados dos produtos de duas formas: consultando a collection inteira ou consultando produto a produto. Na collection de categorias você receberá, além dos dados da própria categoria, uma lista com os ids de produtos que a compõe.
+
+Você pode utilizar a tecnologia que preferir para consumir a API. A única exigência é que seja implementada em JavaScript.
+
 O layout está disponível em formato de Illustrator. No pacote acompanham os links e fonts utilizadas, bem como arquivos png para visualização rápida da arte.
 
 ##Entregáveis
 - HTML e CSS do layout.
 - Consumo da API de dados, montando dinâmicamente os catálogos.
 - Comportamentos de página: caroussel nas listas de produtos, efeitos hover e transições nos produtos.
+
+##API de dados
+A API apenas fornece informações. Qualquer requisição diferente de OPTION, GET ou HEAD será ignorada.
+
+###Categorias
+Endpoint: http://lab.div64.com/teste/categorias
+
+Formato de dados:
+```json
+[
+	{
+		"id": 1,
+		"slug": "eletronicos",
+		"titulo": "Eletrônicos",
+		"produtos": [1,2,3]
+	},
+	{...}
+]
+```
+###Produtos
+Endpoint: http://lab.div64.com/teste/produtos
+
+Formato de dados:
+```json
+[
+	{
+		"id": 1,
+		"slug": "suqueira-tudo-e-festa",
+		"nome": "Suqueira Tudo é Festa",
+		"preco": 100.00,
+		"thumbnail": "http://lab.div64.com/teste/imagens/thumbnail.jpg",
+	},
+	{...}
+]
+```
+###Produto
+Endpoint: http://lab.div64.com/teste/produto/:id
+
+Formato de dados:
+```json
+{
+	"id": 1,
+	"slug": "suqueira-tudo-e-festa",
+	"nome": "Suqueira Tudo é Festa",
+	"preco": 100.00,
+	"thumbnail": "http://lab.div64.com/teste/imagens/thumbnail.jpg",
+}
+```
 
 ##O que será observado
 - Código HTML (semântica, organização, entendimento e componentes da HTML)
@@ -28,6 +80,7 @@ O layout está disponível em formato de Illustrator. No pacote acompanham os li
 - Task runners (Grunt, Gulp)
 - Pré-processadores (preferencialmente Sass)
 - Gitflow
+- Backbone.js
 
 ##Desencorajamos
 - Pré-compiladores de JavaScript e HTML (Coffescript, HAML...)
